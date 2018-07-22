@@ -13,10 +13,10 @@ class River
     @name=name
   end
   def flood
-    self.discharge+self.discharge/100*3
+    self.discharge*1.3 = self.discharge
   end
   def dry_up
-    self.discharge / 2
+    self.discharge / 2 = self.discharge
   end
 end
 
