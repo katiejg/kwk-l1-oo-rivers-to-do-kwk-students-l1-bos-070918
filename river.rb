@@ -13,7 +13,7 @@ class River
     @name=name
   end
   def flood
-    "#{self.discharge}+#{self.discharge}/100*3"
+    self.discharge+self.discharge/100*3
   end
   def dry_up
     self.discharge / 2
